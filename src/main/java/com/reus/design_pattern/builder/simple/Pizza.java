@@ -14,21 +14,21 @@ public abstract class Pizza {
     /**
      * 原料
      */
-    protected abstract void prepare();
+    public abstract void prepare();
 
     /**
      * 烘培
      */
-    protected abstract void bake();
+    public abstract void bake();
 
     /**
      * 切割
      */
-    protected abstract void cut();
+    public abstract void cut();
 
     /**
      * 打包
      */
-    protected abstract void box();
+    public abstract void box();
 
 }

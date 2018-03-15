@@ -10,22 +10,22 @@ package com.reus.design_pattern.builder.simple;
  */
 public class GreekPizza extends Pizza {
     @Override
-    protected void prepare() {
+    public void prepare() {
         System.out.println("准备GreekPizza~");
     }
 
     @Override
-    protected void bake() {
+    public void bake() {
         System.out.println("正在烘培GreekPizza~");
     }
 
     @Override
-    protected void cut() {
+    public void cut() {
         System.out.println("正在切割GreekPizza~");
     }
 
     @Override
-    protected void box() {
+    public void box() {
         System.out.println("正在打包GreekPizza~");
     }
 }
