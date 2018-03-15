@@ -17,6 +17,7 @@ public class PizzaFactory {
                 break;
             case "greek":
                 pizza = new GreekPizza();
+                break;
         }
         return pizza;
     }
