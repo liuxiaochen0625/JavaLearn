@@ -18,6 +18,11 @@ public class HelloMethodInterceptor implements MethodInterceptor {
     public Object intercept(Object obj, Method method, Object[] args,
                             MethodProxy proxy) throws Throwable {
         System.out.println("Before" + ":" + method.getName());
+        System.out.println("实际调用者是： " + obj.getClass());
+        for (Object o : args) {
+            System.out.println("方法参数类型为：" + o.getClass());
+        }
+
         Object object = proxy.invokeSuper(obj, args);
         System.out.println("After" + ":" + method.getName());
         return object;
